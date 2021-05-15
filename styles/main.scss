@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+
+$text-color1: #7F59D6;
+$text-color2: #687CE3;
+$text-color3: #2FAAEF;
+$font: 'Rubik', sans-serif;
+
+@import "reset";
+@import "tasks";
+@import "form";
+
+p {
+    font-size: 14px;
+    font-family: $font;
+    font-weight: 300;
+}
+
+h1{
+    font-size: 32px;
+    font-family: $font;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 24px;
+    font-family: $font;
+    font-weight: 500;
+}
+
+body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-family: $font;
+}
+

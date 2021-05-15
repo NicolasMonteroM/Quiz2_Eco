@@ -1,0 +1,88 @@
+.titles {
+
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+}
+
+.tasks {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    //justify-content: center;
+   // align-items: center;
+    padding: 30px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        padding: 10px;
+    }
+
+    &__task {
+        width: 100%;
+        padding: 10px;
+        //height: 200px;
+        position: relative;
+
+        &--done{
+            background-color: $text-color3;
+        }
+
+        &--doing{
+            background-color: $text-color2;
+        }
+
+        &--toDo{
+            background-color: $text-color1;
+        }
+    }
+
+    &__delete {
+        fill: white;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+
+    &__next {
+        fill: white;
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+    }
+
+    &__previous {
+        fill: white;
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+    }
+
+    &__text {
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    h2 {
+        padding-bottom: 15px;
+    }
+
+    p {
+        color: white;
+    }
+}
+
+#toDo-title {
+    color: $text-color1;
+}
+
+#doing-title {
+    color: $text-color2;
+}
+
+#done-title {
+    color: $text-color3;
+}
