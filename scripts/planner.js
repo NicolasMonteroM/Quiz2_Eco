@@ -1,7 +1,5 @@
 const database = firebase.database();
 
-//const toDoListRef = database.ref('Tasks/To Do');
-
 const task = document.getElementById('taskInfo');
 const addBtn = document.getElementById('addTask');
 
@@ -25,21 +23,19 @@ addBtn.addEventListener('click', function (e) {
             day: taskDate.getDate(),
             month: taskDate.getMonth(),
             year: taskDate.getFullYear(),
-            status: 'to do',
         }
 
         reference.set(taskObj);
+        taskInfo.value = "";
     }
 });
 
 database.ref('Tasks/To Do').on('value', function (data) {
-
     toDoContainer.innerHTML = '';
     data.forEach(taskObj => {
-        let valor = taskObj.val();
-        let fila = new Task(valor);
-        toDoContainer.appendChild(fila.render());
-
+        let value = taskObj.val();
+        let task = new Task(value);
+        toDoContainer.appendChild(task.render());
     }
     );
 })
@@ -47,9 +43,9 @@ database.ref('Tasks/To Do').on('value', function (data) {
 database.ref('Tasks/Doing').on('value', function (data) {
     doingContainer.innerHTML = '';
     data.forEach(taskObj => {
-        let valor = taskObj.val();
-        let fila = new Doing(valor);
-        doingContainer.appendChild(fila.render());
+        let value = taskObj.val();
+        let task = new Doing(value);
+        doingContainer.appendChild(task.render());
     }
     );
 })
@@ -57,10 +53,9 @@ database.ref('Tasks/Doing').on('value', function (data) {
 database.ref('Tasks/Done').on('value', function (data) {
     doneContainer.innerHTML = '';
     data.forEach(taskObj => {
-        let valor = taskObj.val();
-        let fila = new Done(valor);
-        doneContainer.appendChild(fila.render());
+        let value = taskObj.val();
+        let task = new Done(value);
+        doneContainer.appendChild(task.render());
     }
     );
 })
-
