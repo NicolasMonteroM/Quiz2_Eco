@@ -1,4 +1,4 @@
-class Doing {
+class Task {
 
     constructor(task) {
         this.task = task;
@@ -8,8 +8,7 @@ class Doing {
     render = () => {
         let component = document.createElement('div');
         component.innerHTML = `
-        <div class="tasks__task tasks__task--doing">
-
+        <div class="tasks__task tasks__task--toDo"  >
             <p class="tasks__date">
                 ${this.task.day} / ${this.task.month} /  ${this.task.year}
             </p>
@@ -31,14 +30,6 @@ class Doing {
                         d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.218 19l-1.782-1.75 5.25-5.25-5.25-5.25 1.782-1.75 6.968 7-6.968 7z" />
                 </svg>
             </div>
-
-            <div class="tasks__previous" id="previousTask">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path
-                        d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm7.58 0l5.988-5.995 1.414 1.416-4.574 4.579 4.574 4.59-1.414 1.416-5.988-6.006z" />
-                </svg>
-            </div>
-
         </div>
         `;
 

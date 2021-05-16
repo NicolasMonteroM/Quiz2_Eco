@@ -277,6 +277,7 @@ input[type=button] {
   width: 100%;
   padding: 10px;
   position: relative;
+  margin-bottom: 15px;
 }
 
 .tasks__task--done {
@@ -289,6 +290,14 @@ input[type=button] {
 
 .tasks__task--toDo {
   background-color: #7F59D6;
+}
+
+.tasks__date {
+  font-weight: 500;
+  font-size: 12px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
 }
 
 .tasks__delete {
@@ -315,7 +324,7 @@ input[type=button] {
 .tasks__text {
   text-align: center;
   padding-top: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 45px;
 }
 
 .tasks h2 {

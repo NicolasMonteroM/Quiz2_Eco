@@ -20,7 +20,6 @@
             <button class="form__btn" type="submit" id="addTask">
                 ADD TASK
             </button>
-
         </div>
 
     </form>
@@ -30,87 +29,27 @@
         <div class="tasks__container">
             <h2 id="toDo-title">To do</h2>
             <div id="toDoContainer">
-                <div class="tasks__task tasks__task--toDo">
+              
+  
 
-                    <div class="tasks__delete" id="deleteTask">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.151 17.943l-4.143-4.102-4.117 4.159-1.833-1.833 4.104-4.157-4.162-4.119 1.833-1.833 4.155 4.102 4.106-4.16 1.849 1.849-4.1 4.141 4.157 4.104-1.849 1.849z" />
-                        </svg>
-                    </div>
-
-                    <p class="tasks__text">
-                        Hacer prototipo pi
-                    </p>
-
-                    <div class="tasks__next" id="nextTask">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.218 19l-1.782-1.75 5.25-5.25-5.25-5.25 1.782-1.75 6.968 7-6.968 7z" />
-                        </svg>
-                    </div>
-
-                </div>
             </div>
         </div>
 
         <div class="tasks__container">
             <h2 id="doing-title">Doing</h2>
             <div id="doingContainer">
-                <div class="tasks__task tasks__task--doing">
 
-                    <div class="tasks__delete" id="deleteTask">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.151 17.943l-4.143-4.102-4.117 4.159-1.833-1.833 4.104-4.157-4.162-4.119 1.833-1.833 4.155 4.102 4.106-4.16 1.849 1.849-4.1 4.141 4.157 4.104-1.849 1.849z" />
-                        </svg>
-                    </div>
 
-                    <p class="tasks__text">
-                        Hacer prototipo pi
-                    </p>
 
-                    <div class="tasks__next" id="nextTask">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.218 19l-1.782-1.75 5.25-5.25-5.25-5.25 1.782-1.75 6.968 7-6.968 7z" />
-                        </svg>
-                    </div>
-
-                    <div class="tasks__previous" id="previousTask">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm7.58 0l5.988-5.995 1.414 1.416-4.574 4.579 4.574 4.59-1.414 1.416-5.988-6.006z" />
-                        </svg>
-                    </div>
-
-                </div>
             </div>
         </div>
+
         <div class="tasks__container">
             <h2 id="done-title">Done</h2>
             <div id="doneContainer">
-                <div class="tasks__task tasks__task--done">
+                
 
-                    <div class="tasks__delete" id="deleteTask">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.151 17.943l-4.143-4.102-4.117 4.159-1.833-1.833 4.104-4.157-4.162-4.119 1.833-1.833 4.155 4.102 4.106-4.16 1.849 1.849-4.1 4.141 4.157 4.104-1.849 1.849z" />
-                        </svg>
-                    </div>
 
-                    <p class="tasks__text">
-                        Hacer prototipo pi
-                    </p>
-
-                    <div class="tasks__previous" id="previousTask">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path
-                                d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm7.58 0l5.988-5.995 1.414 1.416-4.574 4.579 4.574 4.59-1.414 1.416-5.988-6.006z" />
-                        </svg>
-                    </div>
-
-                </div>
             </div>
         </div>
     </div>
@@ -120,7 +59,7 @@
 </html>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -128,6 +67,6 @@
 
 <script src="scripts/firebase.js"></script>
 <script src="scripts/planner.js"></script>
-<script src="scripts/done.js"></script>
+<script src="scripts/task.js"></script>
 <script src="scripts/doing.js"></script>
-<script src="scripts/toDo.js"></script>
+<script src="scripts/done.js"></script>
